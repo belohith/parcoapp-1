@@ -1,5 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+// Register required Chart.js components
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 function DonutChart({ items }) {
   const chartRef = useRef(null);
@@ -13,7 +22,7 @@ function DonutChart({ items }) {
         data: items.map((item) => item.value),
         backgroundColor: items.map((item) => item.color),
         borderWidth: 6,
-        hoverOffset: 15, 
+        hoverOffset: 10,
       },
     ],
   };
@@ -45,6 +54,15 @@ function DonutChart({ items }) {
       },
     },
   };
+
+  // Ensure proper cleanup
+  useEffect(() => {
+    return () => {
+      if (chartRef.current && chartRef.current.chartInstance) {
+        chartRef.current.chartInstance.destroy();
+      }
+    };
+  }, []);
 
   return (
     <div className="chart-container" style={{ position: "relative" }}>
