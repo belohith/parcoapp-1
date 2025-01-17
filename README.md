@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Parco Assessment App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based web application developed as an assessment for **Parco**. The app demonstrates a dynamic interface for visualizing data using donut charts and tables. Additionally, it includes an option to select different color themes for a customized user experience.
 
-## Available Scripts
+## Live Demo
+You can access the live demo of the application here: [Parco App](https://parkoapp123.netlify.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
+1. **Interactive Donut Charts**:
+   - Visualize data dynamically using a responsive donut chart.
+   - Displays details such as fund name and value on hover.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Data Table**:
+   - Corresponding data displayed in a table format for better visibility.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Theme Selector**:
+   - Choose from multiple color themes to update the chart's color palette.
 
-### `npm test`
+4. **Tabs**:
+   - Navigate between "TSP Holdings" and "Look Through Holdings" to view different datasets.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## How to Use
+1. Navigate to the live application: [Parco App](https://parkoapp123.netlify.app/).
+2. Switch between tabs to view different datasets.
+3. Hover over the donut chart to see detailed information about each segment.
+4. Use the **theme selector** to switch between various color palettes for the chart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+- **React**: Front-end library for building user interfaces.
+- **Chart.js**: For rendering responsive and interactive charts.
+- **react-chartjs-2**: A wrapper library for integrating Chart.js with React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Notes
+- The app was designed as an assessment for Parco with a focus on clean and modular code.
+- An additional **theme color selection** feature has been implemented to enhance user experience.
