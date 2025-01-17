@@ -7,7 +7,6 @@ import {
   Legend,
 } from "chart.js";
 
-// Register required Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function DonutChart({ items }) {
@@ -55,7 +54,6 @@ function DonutChart({ items }) {
     },
   };
 
-  // Ensure proper cleanup
   useEffect(() => {
     return () => {
       if (chartRef.current && chartRef.current.chartInstance) {
